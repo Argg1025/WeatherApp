@@ -25,4 +25,10 @@ namespace WeatherApp
             InitializeComponent();
         }
     }
+
+    public class Weather
+    {
+        public string Location { get; set; }
+        public double Temperature { get; set; }
+    }
 }
