@@ -12,6 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
+
 
 namespace WeatherApp
 {
@@ -30,5 +34,10 @@ namespace WeatherApp
     {
         public string Location { get; set; }
         public double Temperature { get; set; }
+    }
+
+    class Program
+    {
+        static HttpClient client = new HttpClient();
     }
 }
